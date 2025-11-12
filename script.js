@@ -1,0 +1,18 @@
+function tooggleMode() {
+    const html = document.documentElement
+    html.classList.toggle("light") 
+
+    //pegar a tag imag 
+    const img = document.querySelector("#profile img")
+
+   //substituir a imagem  
+   if(html.classList.contains('light')) {
+   //se tiver light mode, adicionar a imagem light
+   img.setAttribute('src', './assets/Magnífico-light.png')
+   } else {
+   //se tiver sem light mode, manter a imagem normal 
+   Image.setAttribute('src','./assets/Magnífico Avatar.png')
+   }
+
+
+}
